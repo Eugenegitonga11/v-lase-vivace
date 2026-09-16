@@ -577,7 +577,12 @@ details[open] .answer{grid-template-rows:1fr}
   .hero-tags{grid-template-columns:1fr;gap:8px}
   .tag p{display:none}
   .stats{flex-wrap:wrap;gap:20px}
-  .manifesto{max-width:none}
+  /* on phones the section is text only: photos and tags step aside */
+  .floats,.pills{display:none}
+  .pin-inner{padding-block:clamp(52px,12vw,76px)}
+  .pin-inner .wrap{display:flex;flex-direction:column;align-items:center}
+  .manifesto{max-width:none;text-align:center}
+  .about-head{text-align:center}
   .pg-card{flex:0 0 86%}
   .fgrid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
